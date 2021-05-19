@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">Sobre</router-link>|
+      <router-link to="/contact">Contato</router-link>
     </div>
     <router-view />
   </div>
@@ -18,14 +19,18 @@
 }
 
 #nav {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  flex-direction: column;
+  display: flex;
   padding: 30px;
-
-  a {
+    a{
     font-weight: bold;
     color: #2c3e50;
-
+    text-decoration: none;
     &.router-link-exact-active {
-      color: #42b983;
+      color: #196cca;
     }
   }
 }
