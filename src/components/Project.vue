@@ -5,7 +5,6 @@
         class="project-image" 
         :style="'background-image:url('+project.image+');'"
         ></div>
-        <img src="project.image" alt="" srcset="">
     <div class="project-infos">
       <a v-bind:href="project.link" target="blank">
         <h4 v-bind:style="'color:'+project.color">{{ project.name }}</h4>
