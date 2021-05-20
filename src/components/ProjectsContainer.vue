@@ -12,7 +12,7 @@ export default {
     return {
       projetos: [
         {
-          image: "",
+          image: "https://imgur.com/euoNAnL.png",
           link: "",
           name: "Async",
           color: "#000000",
