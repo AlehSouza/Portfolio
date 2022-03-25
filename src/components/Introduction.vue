@@ -12,17 +12,10 @@
           </div>
         </div>
         <div class="social">
-          <span>
-            <a href="">A</a>
-          </span>
-          <span>
-            <a href="">B</a>
-          </span>
-          <span>
-            <a href="">C</a>
-          </span>
-          <span>
-            <a href="">D</a>
+          <span class="midia" v-for="(midia, j) in midias" :key="j">
+            <a :href="midia.link" target="_blank"
+              ><span :class="midia.icon"></span>
+            </a>
           </span>
         </div>
       </div>
@@ -38,10 +31,57 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      midias: [
+        {
+          link: "https://github.com/AlehSouza",
+          icon: "fab fa-github",
+        },
+        {
+          link: "https://codepen.io/blezale/",
+          icon: "fab fa-codepen",
+        },
+        {
+          link: "https://www.linkedin.com/in/alesouza2503/",
+          icon: "fab fa-linkedin",
+        },
+        {
+          link: "https://www.facebook.com/alexandre.henrique.16144/",
+          icon: "fab fa-facebook",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
+.cl-white {
+  color: white;
+}
+.social {
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.midia {
+  margin: 5px;
+}
+.midia a {
+  padding: 10px;
+  border: 1.5px solid black;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  span {
+    color: black;
+  }
+}
 .bg {
   background-image: url("./../assets/bg.jpg");
   background-position: center;
@@ -98,21 +138,6 @@ b a {
     color: #ffffff;
     background-color: #e721a5;
     border: 1px solid #a3036e;
-    /* &:nth-child(1) {
-      color: rgb(255, 255, 255);
-      background-color: rgb(52, 170, 62);
-      border: 1px solid rgb(11, 126, 21);
-    }
-    &:nth-child(2) {
-      color: rgb(255, 255, 255);
-      background-color: #dd7f14;
-      border: 1px solid #c76c03;
-    }
-    &:nth-child(3) {
-      color: rgb(255, 255, 255);
-      background-color: rgb(0, 123, 255);
-      border: 1px solid rgb(0, 105, 217);
-    } */
   }
 }
 

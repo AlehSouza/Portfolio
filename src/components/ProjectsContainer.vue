@@ -36,19 +36,19 @@ export default {
           desc: "E-commerce desenvolvido em react para a empresa Kimochism.",
         },
         {
-          image: "https://imgur.com/euoNAnL.png",
-          link: "",
-          name: "Async",
-          color: "#000000",
-          desc: "Site ainda em desenvolvimento",
-        },
-        {
           image:
             "https://upload.wikimedia.org/wikipedia/pt/a/a7/Chrono_Trigger.jpg",
           link: "https://alehsouza.github.io/ChronnoGame/",
           name: "Chronno Trigger - Game",
           color: "#c95c11",
           desc: "Uma simulação simbólica de uma das lutas de um jogo que fez parte da minha infância",
+        },
+        {
+          image: "https://imgur.com/euoNAnL.png",
+          link: "",
+          name: "Async",
+          color: "#000000",
+          desc: "Site ainda em desenvolvimento",
         },
         {
           image:
@@ -82,6 +82,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  h1 {
+    padding: 20px 0px;
+  }
+}
 .container-projects {
   margin: 30px auto;
   width: 1368px;
