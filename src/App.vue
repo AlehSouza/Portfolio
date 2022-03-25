@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import "material-icons/iconfont/material-icons.css";
 import NavBar from "@/shared/NavBar.vue";
 
 export default {
@@ -22,5 +23,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 26px;
+  }
 }
 </style>
