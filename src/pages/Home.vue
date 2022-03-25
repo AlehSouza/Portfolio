@@ -1,23 +1,26 @@
 <template>
   <div class="home">
-    <ProfileIcon/>
-    <ProjectsContainer/>
-    <Footer/>
+    <Introduction />
+    <Trajectory />
+    <ProjectsContainer />
+    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ProfileIcon from "@/components/ProfileIcon.vue";
+import Introduction from "@/components/Introduction.vue";
 import ProjectsContainer from "@/components/ProjectsContainer.vue";
 import Footer from "@/components/Footer.vue";
+import Trajectory from "../components/Trajectory.vue";
 
 export default {
   name: "Home",
   components: {
-    ProfileIcon,
+    Introduction,
+    Trajectory,
     ProjectsContainer,
-    Footer
+    Footer,
   },
 };
 </script>

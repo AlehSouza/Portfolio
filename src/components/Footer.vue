@@ -1,6 +1,5 @@
 <template>
-  <footer>
-  </footer>
+  <footer></footer>
 </template>
 
 <script>
@@ -8,10 +7,8 @@ export default {};
 </script>
 
 <style>
-footer{
-    height: 600px;
-    background-color: black;
-    z-index: -99999;
-    margin-top: -250px;
+footer {
+  height: 50px;
+  background-color: black;
 }
 </style>

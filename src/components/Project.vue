@@ -1,19 +1,19 @@
 <template>
   <div class="project">
     <a v-bind:href="project.link" target="_blank">
-    <div 
-        class="project-image" 
-        :style="'background-image:url('+project.image+');'"
-        ></div>
-    <div class="project-infos">
-      <a v-bind:href="project.link" target="blank">
-        <h4 v-bind:style="'color:'+project.color">{{ project.name }}</h4>
-        <span v-bind:style="'color:'+project.color">></span>
-      </a>
-      <p>
-        {{ project.desc }}
-      </p>
-    </div>
+      <div
+        class="project-image"
+        :style="'background-image:url(' + project.image + ');'"
+      ></div>
+      <div class="project-infos">
+        <a v-bind:href="project.link" target="blank">
+          <h4 v-bind:style="'color:' + project.color">{{ project.name }}</h4>
+          <span v-bind:style="'color:' + project.color">></span>
+        </a>
+        <p>
+          {{ project.desc }}
+        </p>
+      </div>
     </a>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
-a{
+a {
   text-decoration: none;
 }
 .project {
