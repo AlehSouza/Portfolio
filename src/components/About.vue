@@ -26,7 +26,7 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container-about {
   padding-top: 50px;
   justify-content: center;
@@ -35,12 +35,12 @@ export default {};
 }
 .box {
   width: 30vw;
-  height: 500px;
 }
 .left-about {
   text-align: left;
 }
 .right-about {
+  min-height: 300px;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
