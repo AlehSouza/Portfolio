@@ -83,6 +83,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
+  padding-bottom: 50px;
   h1 {
     padding: 20px 0px;
   }

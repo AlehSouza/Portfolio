@@ -14,7 +14,7 @@
 // @ is an alias to /src
 import Introduction from "@/components/Introduction.vue";
 import ProjectsContainer from "@/components/ProjectsContainer.vue";
-import Footer from "@/components/Footer.vue";
+import Footer from "../shared/Footer.vue";
 import Trajectory from "@/components/Trajectory.vue";
 import About from "@/components/About.vue";
 import LineBreak from "../shared/LineBreak.vue";

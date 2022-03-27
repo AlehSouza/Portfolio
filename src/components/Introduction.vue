@@ -1,5 +1,5 @@
 <template>
-  <div class="bg">
+  <div id="bg">
     <div class="container">
       <div class="profile">
         <div class="icon-profile"></div>
@@ -54,6 +54,21 @@ export default {
       ],
     };
   },
+  methods: {
+    backgroundScreen() {
+      let lar = window.screen.width;
+      var bg = document.getElementById("bg");
+
+      if (lar >= 1920) {
+        bg.style.backgroundImage = "url(https://i.imgur.com/SHQra8s.jpg)";
+      } else {
+        bg.style.backgroundImage = "url(https://i.imgur.com/wsGQsix.jpg)";
+      }
+    },
+  },
+  mounted() {
+    this.backgroundScreen();
+  },
 };
 </script>
 
@@ -82,8 +97,7 @@ export default {
     color: black;
   }
 }
-.bg {
-  background-image: url("./../assets/bg.jpg");
+#bg {
   background-position: center;
   background-size: cover;
 }
@@ -94,7 +108,7 @@ export default {
   color: white;
 }
 .profile {
-  padding: 50px;
+  padding: 70px;
 }
 .bio {
   min-width: 250px;
@@ -111,7 +125,12 @@ export default {
 .icon-profile {
   width: 250px;
   height: 250px;
-  background-image: url("https://avatars.githubusercontent.com/u/43255955?v=4");
+  /* Profile pics */
+  /* background-image: url("https://imgur.com/mF03d2W.png");
+  background-image: url("https://imgur.com/VMUkrAO.png");
+  background-image: url("https://imgur.com/exD19qU.png"); */
+  background-image: url("https://imgur.com/dnXxKUk.png");
+  background-color: #2e2b5e;
   border: 8px solid white;
   background-size: cover;
   border-radius: 50%;
