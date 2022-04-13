@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <NavBar />
+    <!-- <NavBar /> -->
     <router-view />
   </div>
 </template>
 
 <script>
 import "material-icons/iconfont/material-icons.css";
-import NavBar from "@/shared/NavBar.vue";
+// import NavBar from "@/shared/NavBar.vue";
 
 export default {
   components: {
-    NavBar,
+    // NavBar,
   },
 };
 </script>

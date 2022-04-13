@@ -13,7 +13,7 @@
         </div>
         <div class="social">
           <span class="midia" v-for="(midia, j) in midias" :key="j">
-            <a :href="midia.link" target="_blank"
+            <a :href="midia.link" target="_blank" :alt="midias.alt"
               ><span :class="midia.icon"></span>
             </a>
           </span>
@@ -38,18 +38,27 @@ export default {
         {
           link: "https://github.com/AlehSouza",
           icon: "fab fa-github",
+          alt: "Github",
         },
         {
           link: "https://codepen.io/blezale/",
           icon: "fab fa-codepen",
+          alt: "Codepen",
         },
         {
           link: "https://www.linkedin.com/in/alesouza2503/",
           icon: "fab fa-linkedin",
+          alt: "Linkedin",
         },
         {
           link: "https://www.facebook.com/alexandre.henrique.16144/",
           icon: "fab fa-facebook",
+          alt: "Facebook",
+        },
+        {
+          link: "https://drive.google.com/file/d/1mYszTNF3Mcf-D47lN_GTQDFEYgbjElan/view",
+          icon: "fas fa-file-code",
+          alt: "Currículo",
         },
       ],
     };
@@ -94,6 +103,8 @@ export default {
   align-items: center;
   display: flex;
   span {
+    width: 17px;
+    height: 17px;
     color: black;
   }
 }

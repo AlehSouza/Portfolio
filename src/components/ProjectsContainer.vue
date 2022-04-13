@@ -15,7 +15,7 @@ export default {
     return {
       projetos: [
         {
-          image: "https://imgur.com/pnwRgEE.png",
+          image: "https://i.imgur.com/PXdM59Z.png",
           link: "",
           name: "Portfólio",
           color: "#e721a5",
@@ -36,8 +36,7 @@ export default {
           desc: "E-commerce desenvolvido em react para a empresa Kimochism.",
         },
         {
-          image:
-            "https://upload.wikimedia.org/wikipedia/pt/a/a7/Chrono_Trigger.jpg",
+          image: "https://imgur.com/WuUw80w.png",
           link: "https://alehsouza.github.io/ChronnoGame/",
           name: "Chronno Trigger - Game",
           color: "#c95c11",
@@ -51,8 +50,7 @@ export default {
           desc: "Site ainda em desenvolvimento",
         },
         {
-          image:
-            "https://wallpaperboat.com/wp-content/uploads/2020/12/07/63377/construction-09.jpg",
+          image: "https://imgur.com/tG1RHqN.png",
           link: "",
           name: "Qual será o próximo?",
           color: "#000000",
