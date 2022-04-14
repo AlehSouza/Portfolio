@@ -22,8 +22,8 @@
       <div class="bio">
         <h1>Enjoy!</h1>
         <p>
-          Olá seja bem-vindo ao meu portfólio <br />
-          confira agora a minha trajetória acadêmica e profissional.
+          Olá, seja bem vindo ao meu portfólio!<br />
+          Confira agora a minha trajetória acadêmica e profissional.
         </p>
       </div>
     </div>

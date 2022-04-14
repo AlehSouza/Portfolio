@@ -1,24 +1,22 @@
 <template>
   <div class="container-about">
     <div class="box left-about">
-      <h1>Sobre mim</h1>
+      <h1>Um pouco sobre mim</h1>
       <p>
-        Bem, como pode ver você está no meu portfólio 🎉 e aqui vou te contar
-        mais um pouco sobre mim!
-        <br /><br />
-        Como já sabe sou Alexandre, atualmente tenho 21 anos (2001), estudo e
-        trabalho na área de tecnologia voltado para o Front-End, pois foi o
-        segmento que escolhi para minha carreira profissional desde que
-        compreendi a separação dessas áreas.👨‍💻
+        Me chamo Alexandre, atualmente tenho 21 anos🎉, estudo e trabalho na
+        área de tecnologia voltado para o Front-End, pois foi o segmento que
+        escolhi para minha carreira profissional desde que compreendi a
+        separação dessas áreas.👨‍💻
         <br /><br />
         Tenho uma grande facilidade com o desenvolvimento de telas e comunicação
-        com cliente. Também sou um estusiasta na area de Design, possuo um curso
-        de Design Ui/Ux que fiz ao longo do meu curso técnico em Desenvolvimento
-        de Sistemas na Etec de Guaianazes. 🎨
+        visual com o usuário. Sou um estusiasta na area de Design, possuo um
+        curso de Design Ui/Ux que fiz ao longo do meu curso técnico em
+        Desenvolvimento de Sistemas na Etec de Guaianazes. 🎨
         <br /><br />
-        Aqui abaixo eu deixei alguns projetos meus que fiz ao longo dos anos e
-        também uns freelances que já trabalhei, e os meus contatos estão no topo
-        da página abaixo da minha foto. Obrigado pela atenção, aproveite 😊
+        Abaixo você pode conferir alguns dos meus projetos que realizei ao longo
+        da minha trajetória.
+        <br />
+        Obrigado pela atenção, aproveite 😊
       </p>
     </div>
     <div class="box right-about">
@@ -33,7 +31,7 @@ export default {};
 
 <style lang="scss" scoped>
 .container-about {
-  padding: 40px 0px;
+  padding: 24px 0px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -70,7 +68,7 @@ export default {};
     flex-direction: column;
   }
   .box {
-    width: 60vw;
+    width: 80vw;
     height: auto;
     margin-bottom: 5%;
     margin-right: 0%;

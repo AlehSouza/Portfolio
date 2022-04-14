@@ -13,7 +13,7 @@
           <div class="date">
             <span
               >Atuei como desenvolvedor FullStack com as linguagens PHP, Node,
-              Mysql, JS e HTML & CSS</span
+              Mysql, JS e HTML & CSS.</span
             >
             <br />
             <b>03/02/2020</b>
@@ -37,7 +37,7 @@
           <div class="date">
             <span
               >Atuo como desenvolvedor Front-End, com as tecnologias,
-              JavaScript, HTML, CSS e Vue</span
+              JavaScript, HTML, CSS e Vue.</span
             >
             <br />
             <b>16/02/2022</b>
@@ -45,11 +45,11 @@
         </div>
 
         <div class="step">
-          <div class="title">Fim da linha</div>
+          <div class="title">Novidades em breve</div>
           <div class="date">
             <span
-              >Por enquanto essa é a minha jornada no mercado de trabalho como
-              Desenvolvedor e Quality Assurance</span
+              >Por enquanto, essa é a minha jornada no mercado de trabalho como
+              Desenvolvedor e Quality Assurance.</span
             >
             <br />
           </div>
@@ -74,7 +74,7 @@ $current-step-color: #e721a5;
 $future-step-color: #ffffff;
 
 .container-trajectory {
-  padding: 30px 0px;
+  padding: 24px 10px;
   h2 {
     margin: 0px;
     padding: 15px;
@@ -97,7 +97,7 @@ $future-step-color: #ffffff;
   font-size: 0.8rem;
   line-height: $marker-size;
   text-align: center;
-  color: white;
+  color: #e721a5;
 }
 
 .step:before {
