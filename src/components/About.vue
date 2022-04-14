@@ -13,9 +13,9 @@
         curso de Design Ui/Ux que fiz ao longo do meu curso técnico em
         Desenvolvimento de Sistemas na Etec de Guaianazes. 🎨
         <br /><br />
-        Abaixo você pode conferir alguns dos meus projetos que realizei ao longo
-        da minha trajetória.
-        <br />
+        Abaixo você pode conferir mais sobre minha trajetória profissional e
+        alguns dos meus projetos que realizei ao longo dessa jornada.
+        <br /><br />
         Obrigado pela atenção, aproveite 😊
       </p>
     </div>
@@ -63,7 +63,7 @@ export default {};
     animation: imgSize 3s infinite;
   }
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1200px) {
   .container-about {
     flex-direction: column;
   }
@@ -72,6 +72,18 @@ export default {};
     height: auto;
     margin-bottom: 5%;
     margin-right: 0%;
+  }
+  .right-about {
+    img {
+      max-width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .right-about {
+    img {
+      max-width: 85%;
+    }
   }
 }
 </style>

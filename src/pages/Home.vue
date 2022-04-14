@@ -1,9 +1,10 @@
 <template>
   <div class="home">
     <Introduction />
-    <Trajectory />
     <LineBreak />
     <About />
+    <LineBreak />
+    <Trajectory />
     <LineBreak />
     <ProjectsContainer />
     <Footer />
