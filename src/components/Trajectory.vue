@@ -24,8 +24,8 @@
           <div class="title">Keycash</div>
           <div class="date">
             <span
-              >Atuei como Quality Assurance (QA), fazendo testes e realizando
-              fluxos nos sistemas.
+              >Atuei como Quality Assurance(QA), escrevendo testes e fazendo
+              fluxos no sistema.
             </span>
             <br />
             <b>30/04/2021</b>
