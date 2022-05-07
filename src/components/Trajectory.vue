@@ -64,13 +64,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import url("../styles/styles.css");
+
 $marker-size: 1.5rem;
 $step-size: 11rem;
 $line-size: 2px;
 
 $timeline-color: #d6dce0;
 $completed-step-color: #000000;
-$current-step-color: #e721a5;
 $future-step-color: #ffffff;
 
 .container-trajectory {
@@ -97,7 +98,7 @@ $future-step-color: #ffffff;
   font-size: 0.8rem;
   line-height: $marker-size;
   text-align: center;
-  color: #e721a5;
+  color: var(--cor-principal);
 }
 
 .step:before {
@@ -132,12 +133,12 @@ $future-step-color: #ffffff;
 }
 
 .step.current {
-  border-color: darken($current-step-color, 10%);
+  border-color: var(--cor-principal);
 }
 
 .step.current:before {
-  border: 1px solid darken($current-step-color, 10%);
-  background-color: $current-step-color;
+  border: 1px solid var(--cor-principal);
+  background-color: var(--cor-principal);
 }
 
 @media screen and (min-width: 40em) {

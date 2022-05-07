@@ -51,11 +51,6 @@ export default {
           alt: "Linkedin",
         },
         {
-          link: "https://www.facebook.com/alexandre.henrique.16144/",
-          icon: "fab fa-facebook",
-          alt: "Facebook",
-        },
-        {
           link: "https://drive.google.com/file/d/1mYszTNF3Mcf-D47lN_GTQDFEYgbjElan/view",
           icon: "fas fa-file-code",
           alt: "Currículo",
@@ -69,9 +64,9 @@ export default {
       var bg = document.getElementById("bg");
 
       if (lar >= 1920) {
-        bg.style.backgroundImage = "url(https://i.imgur.com/SHQra8s.jpg)";
+        bg.style.backgroundImage = "url(https://i.imgur.com/ddavhb7.png)";
       } else {
-        bg.style.backgroundImage = "url(https://i.imgur.com/wsGQsix.jpg)";
+        bg.style.backgroundImage = "url(https://i.imgur.com/jLJ8sBR.png)";
       }
     },
   },
@@ -82,6 +77,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url("../styles/styles.css");
+
 .cl-white {
   color: white;
 }
@@ -136,14 +133,13 @@ export default {
 .icon-profile {
   width: 250px;
   height: 250px;
-  /* Profile pics */
-  /* background-image: url("https://imgur.com/mF03d2W.png");
-  background-image: url("https://imgur.com/VMUkrAO.png");
-  background-image: url("https://imgur.com/exD19qU.png"); */
-  background-image: url("https://imgur.com/dnXxKUk.png");
+  background-image: url("../assets/me.jpg");
   background-color: #2e2b5e;
   border: 8px solid white;
   background-size: cover;
+  background-size: 110%;
+  background-position: 80% 38%;
+  transform: rotate(-10deg);
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -166,7 +162,7 @@ b a {
     margin: 0.5%;
     border-radius: 50px;
     color: #ffffff;
-    background-color: #e721a5;
+    background-color: var(--cor-principal);
     border: 1px solid #a3036e;
   }
 }

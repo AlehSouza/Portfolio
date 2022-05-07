@@ -2,18 +2,15 @@
   <div class="container-footer">
     <footer>
       <div>
-        <b class="headerMenuFooter"></b>
         <span>Alexandre Souza</span>
       </div>
       <div>
-        <b class="headerMenuFooter"></b>
         <a href="mailto:alexandrehg2001@gmail.com">
           <span>alexandrehg2001@gmail.com</span>
         </a>
       </div>
       <div>
-        <b class="headerMenuFooter"></b>
-        <p class="Mission">© 2022 copyright Alexandre Souza</p>
+        <span>© 2022 copyright Alexandre Souza</span>
       </div>
     </footer>
     <div class="detail-footer"></div>
@@ -27,6 +24,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url("../styles/styles.css");
+
 .container-footer {
   flex-direction: column;
   display: flex;
@@ -50,39 +49,15 @@ footer div span {
   padding: 8px;
   cursor: pointer;
 }
-.headerMenuFooter {
+.footer-detail {
   font-size: 20px;
-  padding: 20px 8px;
+  padding: 20px;
   display: block;
-}
-.Mission {
-  padding: 8px;
-  line-height: 25px;
-}
-.marca {
-  margin-left: 0px;
-  padding: 15px 0px;
-  font-size: 34px;
-  color: white;
-  font-weight: bold;
-  text-shadow: -1px -1px 0px #000, 0px -1px 0px #000, 1px -1px 0px #000,
-    -1px 0px 0px #000, 1px 0px 0px #000, -1px 1px 0px #000, 0px 1px 0px #000,
-    1px 1px 0px #000;
-}
-.socialMedia {
-  width: 50px;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  padding: 8px;
-}
-.socialMedia a {
-  color: white !important;
 }
 .detail-footer {
   width: auto;
   height: 15px;
-  background-color: #28225a;
+  background-color: var(--cor-principal);
 }
 
 @media screen and (max-width: 1160px) {
@@ -90,8 +65,6 @@ footer div span {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-  }
-  footer div {
   }
 }
 </style>

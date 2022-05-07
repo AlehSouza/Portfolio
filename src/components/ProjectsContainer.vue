@@ -18,7 +18,7 @@ export default {
           image: "https://i.imgur.com/PXdM59Z.png",
           link: "#",
           name: "Portfólio",
-          color: "#e721a5",
+          color: "var(--cor-principal)",
           desc: "Este é o meu portfólio, você está aqui agora 🤘!",
         },
         {

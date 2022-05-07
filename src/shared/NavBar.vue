@@ -10,6 +10,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import url("../styles/styles.css");
+
 #nav {
   top: 0px;
   left: 0px;
@@ -24,7 +26,7 @@ export default {};
     text-decoration: none;
     margin: 0px 20px;
     &.router-link-exact-active {
-      color: #e721a5;
+      color: var(--cor-principal);
     }
   }
 }

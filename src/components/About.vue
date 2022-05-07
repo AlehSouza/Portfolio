@@ -30,6 +30,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import url("../styles/styles.css");
+
 .container-about {
   padding: 24px 0px;
   justify-content: center;
@@ -59,7 +61,7 @@ export default {};
   img {
     width: 85%;
     border-radius: 50%;
-    border: 8px solid #e721a5;
+    border: 8px solid var(--cor-principal);
     animation: imgSize 3s infinite;
   }
 }
