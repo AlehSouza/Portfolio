@@ -1,5 +1,6 @@
 <template>
   <div id="bg">
+    <!-- #TODO adicionar aba com themes -->
     <div class="container">
       <div class="profile">
         <div class="icon-profile"></div>
@@ -137,9 +138,8 @@ export default {
   background-color: #2e2b5e;
   border: 8px solid white;
   background-size: cover;
-  background-size: 110%;
-  background-position: 80% 38%;
-  transform: rotate(-10deg);
+  background-size: 120%;
+  background-position: center;
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -163,7 +163,7 @@ b a {
     border-radius: 50px;
     color: #ffffff;
     background-color: var(--cor-principal);
-    border: 1px solid #a3036e;
+    border: 1px solid var(--cor-secundaria);
   }
 }
 
