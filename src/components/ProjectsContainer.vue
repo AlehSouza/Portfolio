@@ -38,7 +38,7 @@ export default {
         {
           image: "https://imgur.com/hAMdW3O.png",
           link: "https://genshin-impact-app.vercel.app/",
-          name: "Genshim Impact",
+          name: "Genshin Impact",
           color: "#e34b33",
           desc: "Site sobre Genshin Impact, um jogo RPG. Feito em VueJS, treinando alguns conhecimentos na stack.",
         },
