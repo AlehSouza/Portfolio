@@ -15,7 +15,7 @@ export default {
     return {
       projetos: [
         {
-          image: "https://i.imgur.com/PXdM59Z.png",
+          image: "https://imgur.com/kTl1vbq.png",
           link: "#",
           name: "Portfólio",
           color: "var(--cor-principal)",
@@ -34,6 +34,13 @@ export default {
           name: "Kimochism",
           color: "#000000",
           desc: "E-commerce desenvolvido em react para a empresa Kimochism.",
+        },
+        {
+          image: "https://imgur.com/hAMdW3O.png",
+          link: "https://genshin-impact-app.vercel.app/",
+          name: "Genshim Impact",
+          color: "#e34b33",
+          desc: "Site sobre Genshin Impact, um jogo RPG. Feito em VueJS, treinando alguns conhecimentos na stack.",
         },
         {
           image: "https://imgur.com/WuUw80w.png",
@@ -63,19 +70,12 @@ export default {
           color: "#000000",
           desc: "Site ainda em desenvolvimento.",
         },
-        {
-          image: "https://imgur.com/tG1RHqN.png",
-          link: "",
-          name: "Qual será o próximo?",
-          color: "#000000",
-          desc: "Vamos esperar pra ver o que vem por ai... 👨‍🔧",
-        },
         // {
-        //   image: "",
+        //   image: "https://imgur.com/tG1RHqN.png",
         //   link: "",
-        //   name: "Including",
+        //   name: "Qual será o próximo?",
         //   color: "#000000",
-        //   desc: "Site ainda em desenvolvimento",
+        //   desc: "Vamos esperar pra ver o que vem por ai... 👨‍🔧",
         // },
       ],
     };
