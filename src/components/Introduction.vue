@@ -71,7 +71,6 @@ export default {
         responseType: "json",
       }).then((response) => {
         this.user = response.data;
-        console.log(this.user);
       });
     },
     backgroundScreen() {
