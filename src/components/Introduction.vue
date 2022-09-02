@@ -153,7 +153,7 @@ export default {
   background-color: white;
   border: 8px solid white;
   background-size: cover;
-  background-size: 120%;
+  background-size: 100%;
   background-position: center;
   border-radius: 50%;
   margin: 0 auto;
