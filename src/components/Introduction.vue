@@ -52,7 +52,7 @@ export default {
           alt: "Linkedin",
         },
         {
-          link: "https://drive.google.com/file/d/1mYszTNF3Mcf-D47lN_GTQDFEYgbjElan/view",
+          link: "https://drive.google.com/file/d/1ldxgJ3cPg0ulykUx79uN_vuB8T3VR-6r/view",
           icon: "fas fa-file-code",
           alt: "Currículo",
         },
@@ -65,9 +65,9 @@ export default {
       var bg = document.getElementById("bg");
 
       if (lar >= 1920) {
-        bg.style.backgroundImage = "url(https://i.imgur.com/ddavhb7.png)";
+        bg.style.backgroundImage = "url(https://i.imgur.com/oqDcmWF.jpg)";
       } else {
-        bg.style.backgroundImage = "url(https://i.imgur.com/jLJ8sBR.png)";
+        bg.style.backgroundImage = "url(https://i.imgur.com/DgvvpEB.jpg)";
       }
     },
   },
@@ -111,7 +111,7 @@ export default {
   background-size: cover;
 }
 .container {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.75);
   justify-content: center;
   display: flex;
   color: white;
@@ -121,7 +121,7 @@ export default {
 }
 .bio {
   min-width: 250px;
-  width: 44%;
+  width: 38%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

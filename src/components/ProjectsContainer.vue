@@ -40,7 +40,7 @@ export default {
           link: "https://genshin-impact-app.vercel.app/",
           name: "Genshin Impact",
           color: "#e34b33",
-          desc: "Site sobre Genshin Impact, um jogo RPG. Feito em VueJS, treinando alguns conhecimentos na stack.",
+          desc: "Site sobre Genshin Impact, um jogo RPG. Feito em VueJS, treinando alguns conhecimentos na stack. (Desktop)",
         },
         {
           image: "https://imgur.com/WuUw80w.png",
