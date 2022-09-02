@@ -127,7 +127,7 @@ export default {
   background-size: cover;
 }
 .container {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.76);
   justify-content: center;
   display: flex;
   color: white;
