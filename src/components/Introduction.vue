@@ -3,8 +3,11 @@
     <!-- #TODO adicionar aba com themes -->
     <div class="container">
       <div class="profile">
-        <div class="icon-profile"></div>
-        <h1>Alexandre Souza</h1>
+        <div
+          class="icon-profile"
+          v-bind:style="{ backgroundImage: 'url(' + user.avatar_url + ')' }"
+        ></div>
+        <h1>{{ user.name }}</h1>
         <div>
           <div class="titles">
             <span>Front-end Dev</span>
@@ -23,8 +26,7 @@
       <div class="bio">
         <h1>Enjoy!</h1>
         <p>
-          Olá, seja bem vindo ao meu portfólio!<br />
-          Confira agora a minha trajetória acadêmica e profissional.
+          {{ user.bio }}
         </p>
       </div>
     </div>
@@ -32,6 +34,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -57,9 +60,20 @@ export default {
           alt: "Currículo",
         },
       ],
+      user: {},
     };
   },
   methods: {
+    getUser(url) {
+      axios({
+        method: "get",
+        url: url,
+        responseType: "json",
+      }).then((response) => {
+        this.user = response.data;
+        console.log(this.user);
+      });
+    },
     backgroundScreen() {
       let lar = window.screen.width;
       var bg = document.getElementById("bg");
@@ -70,6 +84,9 @@ export default {
         bg.style.backgroundImage = "url(https://i.imgur.com/DgvvpEB.jpg)";
       }
     },
+  },
+  beforeMount() {
+    this.getUser("https://api.github.com/users/alehsouza");
   },
   mounted() {
     this.backgroundScreen();
@@ -134,8 +151,7 @@ export default {
 .icon-profile {
   width: 250px;
   height: 250px;
-  background-image: url("../assets/me.jpg");
-  background-color: #2e2b5e;
+  background-color: white;
   border: 8px solid white;
   background-size: cover;
   background-size: 120%;
