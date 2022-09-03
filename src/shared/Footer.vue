@@ -38,16 +38,16 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap-reverse;
   display: flex;
-}
-footer div {
-  width: 300px;
-  line-height: 15px;
-}
-footer div span {
-  display: block;
-  color: white;
-  padding: 8px;
-  cursor: pointer;
+  div {
+    width: 300px;
+    line-height: 15px;
+    span {
+      display: block;
+      color: white;
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
 }
 .footer-detail {
   font-size: 20px;

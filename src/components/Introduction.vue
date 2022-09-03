@@ -1,8 +1,7 @@
 <template>
   <div id="bg">
-    <!-- #TODO adicionar aba com themes -->
     <div class="container">
-      <div class="profile">
+      <div class="profile" data-aos="fade-up" data-aos-delay="300">
         <div
           class="icon-profile"
           v-bind:style="{ backgroundImage: 'url(' + user.avatar_url + ')' }"
@@ -23,7 +22,7 @@
           </span>
         </div>
       </div>
-      <div class="bio">
+      <div class="bio" data-aos="fade-up" data-aos-delay="300">
         <h1>Enjoy!</h1>
         <p>
           {{ user.bio }}

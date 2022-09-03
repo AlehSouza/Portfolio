@@ -1,5 +1,6 @@
 <template>
-  <div class="project">
+  <!-- #TODO adicionar uma BADGE no objeto dos projetos dizendo qual stack foi utilizada e colocar próxima ao projeto destacando/a -->
+  <div class="project" data-aos="fade-up" data-aos-delay="300">
     <a v-bind:href="project.link" target="_blank">
       <div
         class="project-image"
@@ -26,7 +27,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 a {
   text-decoration: none;
 }
