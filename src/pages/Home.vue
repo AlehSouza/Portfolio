@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <Introduction />
-    <LineBreak />
-    <About />
-    <LineBreak />
-    <Trajectory />
-    <LineBreak />
-    <ProjectsContainer />
+    <LineBreak data-aos="fade-up" data-aos-delay="300" />
+    <About data-aos="fade-up" data-aos-delay="300" />
+    <LineBreak data-aos="fade-up" data-aos-delay="300" />
+    <Trajectory data-aos="fade-up" data-aos-delay="300" />
+    <LineBreak data-aos="fade-up" data-aos-delay="300" />
+    <ProjectsContainer data-aos="fade-up" data-aos-delay="300" />
     <Footer />
   </div>
 </template>

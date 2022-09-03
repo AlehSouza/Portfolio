@@ -1,5 +1,5 @@
 <template>
-  <div class="container-trajectory">
+  <div class="container-trajectory" data-aos="fade-up" data-aos-delay="300">
     <div>
       <h1>Trajetória Profissional</h1>
       <p>

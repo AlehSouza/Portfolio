@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="project" data-aos="fade-up" data-aos-delay="300">
     <a v-bind:href="project.link" target="_blank">
       <div
         class="project-image"
