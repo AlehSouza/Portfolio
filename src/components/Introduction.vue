@@ -1,6 +1,5 @@
 <template>
   <div id="bg">
-    <!-- #TODO adicionar aba com themes -->
     <div class="container">
       <div class="profile" data-aos="fade-up" data-aos-delay="300">
         <div
