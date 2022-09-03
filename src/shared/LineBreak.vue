@@ -8,7 +8,7 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss" scoped>
 .LineBreak {
   width: 50vw;
   height: 1px;
