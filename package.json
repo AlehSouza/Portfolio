@@ -9,6 +9,7 @@
     "fix": "npm run lint -- --fix"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "axios": "^0.27.2",
     "core-js": "^3.6.5",
     "material-icons": "^1.10.8",

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-about">
+  <div class="container-about" data-aos="fade-up" data-aos-delay="300">
     <div class="box left-about">
       <h1>Um pouco sobre mim</h1>
       <p>
