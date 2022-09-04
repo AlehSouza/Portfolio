@@ -86,4 +86,9 @@ export default {
     cursor: pointer;
   }
 }
+@media screen and (max-width: 600px) {
+  .translate-options {
+    right: 10px;
+  }
+}
 </style>
