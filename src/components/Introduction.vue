@@ -24,9 +24,11 @@
       </div>
       <div class="bio" data-aos="fade-up" data-aos-delay="300">
         <h1>Enjoy!</h1>
-        <p>
-          {{ user.bio }}
-        </p>
+        <p
+          v-html="
+            this.lang === 'pt_br' ? this.texts.bio.pt_br : this.texts.bio.eng
+          "
+        ></p>
       </div>
     </div>
   </div>
@@ -35,6 +37,16 @@
 <script>
 import axios from "axios";
 export default {
+  props: {
+    lang: {
+      type: String,
+      required: true,
+    },
+    texts: {
+      type: Object,
+      required: true,
+    },
+  },
   data() {
     return {
       midias: [

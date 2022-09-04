@@ -47,6 +47,9 @@ footer {
       padding: 8px;
       cursor: pointer;
     }
+    a {
+      text-decoration: none;
+    }
   }
 }
 .footer-detail {

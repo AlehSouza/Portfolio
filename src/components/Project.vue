@@ -18,7 +18,7 @@
           <span v-bind:style="'color:' + project.color">></span>
         </a>
         <p>
-          {{ project.desc }}
+          {{ this.lang === "pt_br" ? project.desc_pt_br : project.desc_eng }}
         </p>
       </div>
     </a>
@@ -29,11 +29,15 @@
 export default {
   props: {
     project: {},
+    lang: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 a {
   text-decoration: none;
 }

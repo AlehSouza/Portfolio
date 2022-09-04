@@ -1,56 +1,106 @@
 <template>
   <div class="container-trajectory" data-aos="fade-up" data-aos-delay="300">
     <div>
-      <h1>Trajetória Profissional</h1>
-      <p>
-        Um pouco sobre mim e o papel que desempenhei em diferentes empresas.
-      </p>
+      <h1
+        v-html="
+          this.lang === 'pt_br'
+            ? this.texts.title_trajectory.pt_br
+            : this.texts.title_trajectory.eng
+        "
+      ></h1>
+      <p
+        v-html="
+          this.lang === 'pt_br'
+            ? this.texts.subtitle_trajectory.pt_br
+            : this.texts.subtitle_trajectory.eng
+        "
+      ></p>
     </div>
     <div class="timeline">
       <div class="timeline">
         <div class="step completed">
-          <div class="title">ConferenciaCorp</div>
+          <div
+            class="title"
+            v-html="
+              this.lang === 'pt_br'
+                ? this.texts.jobs_subtitle_trajectory[0].title.pt_br
+                : this.texts.jobs_subtitle_trajectory[0].title.eng
+            "
+          ></div>
           <div class="date">
             <span
-              >Atuei como desenvolvedor FullStack com as linguagens PHP, Node,
-              Mysql, JS e HTML & CSS.</span
-            >
+              v-html="
+                this.lang === 'pt_br'
+                  ? this.texts.jobs_subtitle_trajectory[0].text.pt_br
+                  : this.texts.jobs_subtitle_trajectory[0].text.eng
+              "
+            ></span>
             <br />
             <b>03/02/2020</b>
           </div>
         </div>
 
         <div class="step completed">
-          <div class="title">Keycash</div>
+          <div
+            class="title"
+            v-html="
+              this.lang === 'pt_br'
+                ? this.texts.jobs_subtitle_trajectory[1].title.pt_br
+                : this.texts.jobs_subtitle_trajectory[1].title.eng
+            "
+          ></div>
           <div class="date">
             <span
-              >Atuei como Quality Assurance(QA), escrevendo testes e fazendo
-              fluxos no sistema.
-            </span>
+              v-html="
+                this.lang === 'pt_br'
+                  ? this.texts.jobs_subtitle_trajectory[1].text.pt_br
+                  : this.texts.jobs_subtitle_trajectory[1].text.eng
+              "
+            ></span>
             <br />
             <b>30/04/2021</b>
           </div>
         </div>
 
         <div class="step current" data-notes-count="2">
-          <div class="title">Keycash</div>
+          <div
+            class="title"
+            v-html="
+              this.lang === 'pt_br'
+                ? this.texts.jobs_subtitle_trajectory[2].title.pt_br
+                : this.texts.jobs_subtitle_trajectory[2].title.eng
+            "
+          ></div>
           <div class="date">
             <span
-              >Atuo como desenvolvedor Front-End, com as tecnologias,
-              JavaScript, HTML, CSS e Vue.</span
-            >
+              v-html="
+                this.lang === 'pt_br'
+                  ? this.texts.jobs_subtitle_trajectory[2].text.pt_br
+                  : this.texts.jobs_subtitle_trajectory[2].text.eng
+              "
+            ></span>
             <br />
             <b>16/02/2022</b>
           </div>
         </div>
 
         <div class="step">
-          <div class="title">Novidades em breve</div>
+          <div
+            class="title"
+            v-html="
+              this.lang === 'pt_br'
+                ? this.texts.jobs_subtitle_trajectory[3].title.pt_br
+                : this.texts.jobs_subtitle_trajectory[3].title.eng
+            "
+          ></div>
           <div class="date">
             <span
-              >Por enquanto, essa é a minha jornada no mercado de trabalho como
-              Desenvolvedor e Quality Assurance.</span
-            >
+              v-html="
+                this.lang === 'pt_br'
+                  ? this.texts.jobs_subtitle_trajectory[3].text.pt_br
+                  : this.texts.jobs_subtitle_trajectory[3].text.eng
+              "
+            ></span>
             <br />
           </div>
         </div>
@@ -60,7 +110,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    lang: {
+      type: String,
+      required: true,
+    },
+    texts: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

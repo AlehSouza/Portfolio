@@ -1,23 +1,18 @@
 <template>
   <div class="container-about" data-aos="fade-up" data-aos-delay="300">
     <div class="box left-about">
-      <h1>Um pouco sobre mim</h1>
-      <p>
-        Me chamo Alexandre, atualmente tenho 21 anos🎉, estudo e trabalho na
-        área de tecnologia voltado para o Front-End, pois foi o segmento que
-        escolhi para minha carreira profissional desde que compreendi a
-        separação dessas áreas.👨‍💻
-        <br /><br />
-        Tenho uma grande facilidade com o desenvolvimento de telas e comunicação
-        visual com o usuário. Sou um estusiasta na area de Design, possuo um
-        curso de Design Ui/Ux que fiz ao longo do meu curso técnico em
-        Desenvolvimento de Sistemas na Etec de Guaianazes. 🎨
-        <br /><br />
-        Abaixo você pode conferir mais sobre minha trajetória profissional e
-        alguns dos meus projetos que realizei ao longo dessa jornada.
-        <br /><br />
-        Obrigado pela atenção, aproveite 😊
-      </p>
+      <h1
+        v-html="
+          this.lang === 'pt_br'
+            ? this.texts.title_about.pt_br
+            : this.texts.title_about.eng
+        "
+      ></h1>
+      <p
+        v-html="
+          this.lang === 'pt_br' ? this.texts.about.pt_br : this.texts.about.eng
+        "
+      ></p>
     </div>
     <div class="box right-about">
       <img src="./../assets/about_me.png" />
@@ -26,7 +21,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    lang: {
+      type: String,
+      required: true,
+    },
+    texts: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -49,6 +55,8 @@ export default {};
   }
   p {
     padding: 12px;
+    flex-direction: column;
+    display: flex;
   }
 }
 .right-about {

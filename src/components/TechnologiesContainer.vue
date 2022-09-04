@@ -1,6 +1,20 @@
 <template>
   <div class="container">
-    <h1>Tecnologias</h1>
+    <h1
+      v-html="
+        this.lang === 'pt_br'
+          ? this.texts.title_technologies.pt_br
+          : this.texts.title_technologies.eng
+      "
+    ></h1>
+    <span
+      class="container-info"
+      v-html="
+        this.lang === 'pt_br'
+          ? this.texts.subtitle_technologies.pt_br
+          : this.texts.subtitle_technologies.eng
+      "
+    ></span>
     <div class="container-technologies">
       <Technology
         v-for="(technology, i) in technologies"
@@ -14,6 +28,16 @@
 <script>
 import Technology from "./Technology.vue";
 export default {
+  props: {
+    lang: {
+      type: String,
+      required: true,
+    },
+    texts: {
+      type: Object,
+      required: true,
+    },
+  },
   components: { Technology },
   data() {
     return {
@@ -69,7 +93,8 @@ export default {
   flex-wrap: wrap;
   display: flex;
 }
-Technology {
-  z-index: 1;
+.container-info {
+  font-style: italic;
+  color: #6a6a6a;
 }
 </style>
