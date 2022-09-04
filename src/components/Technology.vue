@@ -30,11 +30,6 @@ export default {
   props: {
     technologies: {},
   },
-  data() {
-    return {
-      name: "asd",
-    };
-  },
 };
 </script>
 <style lang="scss" scoped>
@@ -113,7 +108,7 @@ export default {
     );
   }
   .yellow {
-    background-color: yellow;
+    background-color: #ffdf00;
   }
 }
 </style>
