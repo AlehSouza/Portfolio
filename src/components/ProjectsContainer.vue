@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Meus Projetos</h1>
     <span class="container-info"
-      >A badge a esquerda do card representa a tecnologia que mais foi utilizada
+      >A badge à direita do card representa a tecnologia que mais foi utilizada
       no projeto.</span
     >
     <div class="container-projects">
