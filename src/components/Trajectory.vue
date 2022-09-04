@@ -235,4 +235,20 @@ $future-step-color: #ffffff;
     left: $step-size / 2 - $marker-size / 2;
   }
 }
+@media screen and (max-width: 500px) {
+  .container-trajectory {
+    flex-direction: column;
+    display: flex;
+    div {
+      h1 {
+        width: 80vw;
+        margin: 0 auto;
+      }
+      p {
+        width: 80vw;
+        margin: 0 auto;
+      }
+    }
+  }
+}
 </style>

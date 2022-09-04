@@ -168,4 +168,18 @@ export default {
     width: auto;
   }
 }
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    display: flex;
+    h1 {
+      width: 80vw;
+      margin: 0 auto;
+    }
+    span {
+      width: 80vw;
+      margin: 0 auto;
+    }
+  }
+}
 </style>
