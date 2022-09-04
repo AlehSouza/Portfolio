@@ -74,6 +74,11 @@ export default {
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
         },
+        {
+          name: "Vercel",
+          stars: 3,
+          image: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
+        },
       ],
     };
   },
