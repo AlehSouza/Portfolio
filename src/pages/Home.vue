@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="translate-options">
+    <div class="translate-options" data-aos="fade-up" data-aos-delay="300">
       <button @click="changeLang('pt_br')">PT-BR</button>|
       <button @click="changeLang('eng')">ENG</button>
     </div>
@@ -88,7 +88,9 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .translate-options {
-    right: 10px;
+    z-index: 1;
+    padding: 8px;
+    right: 5px;
   }
 }
 </style>
