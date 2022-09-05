@@ -58,9 +58,19 @@ export default {
           image: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
         },
         {
+          name: "Vercel",
+          stars: 3,
+          image: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
+        },
+        {
           name: "Vue",
           stars: 3,
           image: "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
+        },
+        {
+          name: "Vuetify",
+          stars: 3,
+          image: "https://avatars.githubusercontent.com/u/22138497?s=200&v=4",
         },
         {
           name: "React",
@@ -73,11 +83,6 @@ export default {
           stars: 2,
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
-        },
-        {
-          name: "Vercel",
-          stars: 3,
-          image: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
         },
       ],
     };
