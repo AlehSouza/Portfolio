@@ -43,18 +43,8 @@ export default {
     return {
       technologies: [
         {
-          name: "HTML",
-          stars: 5,
-          image: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-        },
-        {
-          name: "CSS",
-          stars: 5,
-          image: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-        },
-        {
           name: "JavaScript",
-          stars: 3,
+          stars: 4,
           image: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
         },
         {
