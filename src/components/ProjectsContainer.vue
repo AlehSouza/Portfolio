@@ -123,7 +123,7 @@ export default {
           color: "#000000",
           desc_pt_br:
             "Um jogo feito em HTML, CSS, JS para uma matéria da faculdade.",
-          desc_eng: "Website still under development.",
+          desc_eng: "A game made in HTML, CSS, JS for a college subject.",
           stack: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
           github_link: "https://github.com/AlehSouza/Cade",
         },
