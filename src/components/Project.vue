@@ -11,6 +11,19 @@
         >
           <div :style="'background-image:url(' + project.stack + ');'"></div>
         </div>
+        <div
+          v-if="project.github_link"
+          class="project-stack-badge github-badge"
+          v-bind:style="'border: 3px solid' + project.color"
+        >
+          <a :href="project.github_link" target="_blank">
+            <div
+              style="
+                background-image: url('https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU');
+              "
+            ></div>
+          </a>
+        </div>
       </div>
       <div class="project-infos">
         <a v-bind:href="project.link" target="blank">
@@ -57,7 +70,8 @@ a {
   height: 180px;
   background-size: cover;
   background-position: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   display: flex;
 }
 .project-stack-badge {
@@ -69,13 +83,20 @@ a {
   border: 3px solid white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 5%;
+  margin-bottom: 1%;
   overflow: hidden;
+  z-index: 9999;
   div {
     width: 100%;
     height: 100%;
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+.github-badge {
+  div {
+    background-size: cover;
   }
 }
 .project-infos {
