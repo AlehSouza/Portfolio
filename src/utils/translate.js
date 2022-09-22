@@ -77,6 +77,14 @@ const translations = {
     pt_br: `A badge à direita do card representa a tecnologia que mais foi utilizada no projeto.`,
     eng: `The badge on the right of the card represents the technology that was most used in the project.`,
   },
+  send_mail_title: {
+    pt_br: `Contato`,
+    eng: `Contact`,
+  },
+  send_mail_span: {
+    pt_br: `Entre em contato comigo agora mesmo!`,
+    eng: `Contact me right now!`,
+  },
 };
 
 export default translations;

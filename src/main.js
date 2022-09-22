@@ -8,7 +8,9 @@ Vue.config.productionTip = false;
 
 new Vue({
   created() {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   },
   router,
   render: (h) => h(App),

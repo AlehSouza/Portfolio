@@ -4,7 +4,7 @@
       <button @click="changeLang('pt_br')">PT-BR</button>|
       <button @click="changeLang('eng')">ENG</button>
     </div>
-    <Introduction :lang="lang" :texts="translations" />
+    <Introduction :lang="lang" :texts="translations" :midias="midias" />
     <LineBreak data-aos="fade-up" data-aos-delay="300" />
     <About
       :lang="lang"
@@ -33,6 +33,14 @@
       data-aos="fade-up"
       data-aos-delay="300"
     />
+    <SendMail
+      v-if="flag_component"
+      :lang="lang"
+      :texts="translations"
+      :midias="midias"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    />
     <Footer />
   </div>
 </template>
@@ -47,6 +55,7 @@ import About from "@/components/About.vue";
 import LineBreak from "../shared/LineBreak.vue";
 import TechnologiesContainer from "../components/TechnologiesContainer.vue";
 import translations from "../utils/translate";
+import SendMail from "../components/SendMail.vue";
 
 export default {
   name: "Home",
@@ -57,12 +66,36 @@ export default {
     About,
     ProjectsContainer,
     TechnologiesContainer,
+    SendMail,
     Footer,
   },
   data() {
     return {
       lang: "pt_br",
       translations,
+      midias: [
+        {
+          link: "https://github.com/AlehSouza",
+          icon: "fab fa-github",
+          alt: "Github",
+        },
+        {
+          link: "https://codepen.io/blezale/",
+          icon: "fab fa-codepen",
+          alt: "Codepen",
+        },
+        {
+          link: "https://www.linkedin.com/in/alesouza2503/",
+          icon: "fab fa-linkedin",
+          alt: "Linkedin",
+        },
+        {
+          link: "https://drive.google.com/file/d/1ldxgJ3cPg0ulykUx79uN_vuB8T3VR-6r/view",
+          icon: "fas fa-file-code",
+          alt: "Currículo",
+        },
+      ],
+      flag_component: false,
     };
   },
   methods: {

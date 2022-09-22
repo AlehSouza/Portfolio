@@ -46,31 +46,13 @@ export default {
       type: Object,
       required: true,
     },
+    midias: {
+      type: Array,
+      required: true,
+    },
   },
   data() {
     return {
-      midias: [
-        {
-          link: "https://github.com/AlehSouza",
-          icon: "fab fa-github",
-          alt: "Github",
-        },
-        {
-          link: "https://codepen.io/blezale/",
-          icon: "fab fa-codepen",
-          alt: "Codepen",
-        },
-        {
-          link: "https://www.linkedin.com/in/alesouza2503/",
-          icon: "fab fa-linkedin",
-          alt: "Linkedin",
-        },
-        {
-          link: "https://drive.google.com/file/d/1ldxgJ3cPg0ulykUx79uN_vuB8T3VR-6r/view",
-          icon: "fas fa-file-code",
-          alt: "Currículo",
-        },
-      ],
       user: {},
     };
   },
