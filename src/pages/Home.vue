@@ -34,7 +34,6 @@
       data-aos-delay="300"
     />
     <SendMail
-      v-if="flag_component"
       :lang="lang"
       :texts="translations"
       :midias="midias"
@@ -95,7 +94,6 @@ export default {
           alt: "Currículo",
         },
       ],
-      flag_component: false,
     };
   },
   methods: {

@@ -85,6 +85,14 @@ const translations = {
     pt_br: `Entre em contato comigo agora mesmo!`,
     eng: `Contact me right now!`,
   },
+  send_mail_placeholder_msg: {
+    pt_br: `Mensagem`,
+    eng: `Message`,
+  },
+  send_mail_answer: {
+    pt_br: `Opa! tudo bem? eu recebi sua mensagem, pode deixar que em breve entrarei em contato com você, obrigado =) Att: Alexandre`,
+    eng: `Hello! how are you? I received your message, I will contact you soon, thank you =) Att: Alexandre`,
+  },
 };
 
 export default translations;

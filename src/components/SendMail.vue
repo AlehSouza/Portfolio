@@ -16,11 +16,58 @@
     ></span>
     <br />
     <div class="input-send">
-      <input placeholder="it_hunter@example.com" />
-      <button>
-        <span class="fas fa-location-arrow"></span>
-      </button>
+      <form
+        action="https://formsubmit.co/06191976e626254db5e8061f28f63981"
+        method="POST"
+      >
+        <input type="hidden" name="_next" value="https://alehsouza.dev/" />
+        <!-- <input type="hidden" name="_captcha" value="false" /> -->
+        <input type="hidden" name="_template" value="box" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Portfólio - Mensagem nova"
+        />
+        <input
+          placeholder="John Doe"
+          v-model="name_message"
+          name="name"
+          required
+        />
+        <input
+          type="hidden"
+          name="_autoresponse"
+          :value="
+            this.lang === 'pt_br'
+              ? this.texts.send_mail_answer.pt_br
+              : this.texts.send_mail_answer.eng
+          "
+        />
+        <input
+          placeholder="john.doe@example.com"
+          v-model="email_message"
+          name="email"
+          required
+        />
+        <input
+          :placeholder="
+            this.lang === 'pt_br'
+              ? this.texts.send_mail_placeholder_msg.pt_br
+              : this.texts.send_mail_placeholder_msg.eng
+          "
+          v-model="text_message"
+          name="text"
+          required
+        />
+        <button
+          type="submit"
+          :disabled="!name_message || !email_message || !text_message"
+        >
+          <span class="fas fa-location-arrow"></span>
+        </button>
+      </form>
     </div>
+
     <div class="social">
       <span class="midia" v-for="(midia, j) in midias" :key="j">
         <a :href="midia.link" target="_blank" :alt="midias.alt"
@@ -48,7 +95,11 @@ export default {
     },
   },
   data() {
-    return {};
+    return {
+      name_message: "",
+      email_message: "",
+      text_message: "",
+    };
   },
 };
 </script>
@@ -69,34 +120,41 @@ export default {
 }
 .input-send {
   width: 100%;
-  border-radius: 50px;
-  overflow: hidden;
   max-width: 500px;
-  display: flex;
-  input,
-  button {
-    padding: 12px;
-    border: 0px;
-    outline: none;
-  }
-  input {
-    padding-left: 25px;
+  form {
     width: 100%;
-  }
-  button {
-    width: 60px;
-    background-color: var(--cor-principal);
-    cursor: pointer;
-    span {
-      padding: 0px 6px;
-      padding-top: 4px;
-      padding-right: 10px;
-      margin: 0px;
-      font-size: 24px;
-      color: white;
+    max-width: 500px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    input {
+      border: 0px;
+      padding: 12px;
+      margin: 1%;
+      outline: none;
+    }
+    button {
+      background-color: var(--cor-principal);
+      cursor: pointer;
+      border: 0px;
+      padding: 12px;
+      margin: 1%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      span {
+        margin: 0px;
+        font-size: 24px;
+        color: white;
+      }
+      &:disabled {
+        cursor: not-allowed;
+      }
     }
   }
 }
+
 .social {
   margin-top: 25px;
   padding: 8px;
