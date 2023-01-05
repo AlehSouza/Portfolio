@@ -10,7 +10,7 @@
         </a>
       </div>
       <div>
-        <span>© 2022 copyright Alexandre Souza</span>
+        <span>© {{ timeData }} copyright Alexandre Souza</span>
       </div>
     </footer>
     <div class="detail-footer"></div>
@@ -20,6 +20,11 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+    return {
+      timeData: new Date().getFullYear(),
+    };
+  },
 };
 </script>
 
