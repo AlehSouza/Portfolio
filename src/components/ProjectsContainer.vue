@@ -16,18 +16,23 @@
       "
     ></span>
     <div class="container-projects">
-      <Project
-        v-for="(projeto, i) in projetos"
-        :key="i"
-        :project="projeto"
-        :lang="lang"
-      />
+      <div ref="slider" class="keen-slider">
+        <div
+          class="keen-slider__slide"
+          v-for="(projeto, i) in projetos"
+          :key="i"
+        >
+          <Project :project="projeto" :lang="lang" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Project from "./Project.vue";
+import "keen-slider/keen-slider.min.css";
+import KeenSlider from "keen-slider";
 
 export default {
   props: {
@@ -81,7 +86,7 @@ export default {
           github_link: "https://github.com/AlehSouza/Kimo-web",
         },
         {
-          image: "https://imgur.com/hAMdW3O.png",
+          image: "https://imgur.com/mlPDb7C.png",
           link: "https://genshin-impact-app.vercel.app/",
           name: "Genshin Impact",
           color: "#e34b33",
@@ -160,6 +165,29 @@ export default {
       ],
     };
   },
+  mounted() {
+    this.slider = new KeenSlider(this.$refs.slider, {
+      loop: true,
+      breakpoints: {
+        "(min-width: 500px)": {
+          slides: { perView: 1, spacing: 0 },
+        },
+        "(min-width: 780px)": {
+          slides: { perView: 2, spacing: 0 },
+        },
+        "(min-width: 1200px)": {
+          slides: { perView: 3, spacing: 0 },
+        },
+      },
+      slides: {
+        spacing: 0,
+        perView: 1,
+      },
+    });
+  },
+  beforeDestroy() {
+    if (this.slider) this.slider.destroy();
+  },
 };
 </script>
 
@@ -171,12 +199,17 @@ export default {
   }
 }
 .container-info {
+  margin: 20px;
+  text-align: center;
   font-style: italic;
   color: #6a6a6a;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 .container-projects {
   margin: 30px auto;
-  width: 1368px;
+  width: 1300px;
   flex-wrap: wrap;
   display: flex;
 }
@@ -186,10 +219,8 @@ export default {
     width: auto;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .container {
-    flex-direction: column;
-    display: flex;
     h1 {
       width: 80vw;
       margin: 0 auto;
@@ -199,5 +230,12 @@ export default {
       margin: 0 auto;
     }
   }
+}
+
+/* Slider */
+.keen-slider__slide {
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
 </style>

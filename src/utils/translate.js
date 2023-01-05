@@ -74,8 +74,8 @@ const translations = {
     eng: `My projects`,
   },
   subtitle_projects: {
-    pt_br: `A badge à direita do card representa a tecnologia que mais foi utilizada no projeto.`,
-    eng: `The badge on the right of the card represents the technology that was most used in the project.`,
+    pt_br: `A badge à direita do card representa a tecnologia que mais foi utilizada no projeto. <br><br> <b>Deslize para os lados para ver mais projetos</b>`,
+    eng: `The badge on the right of the card represents the technology that was most used in the project. <br><br> <b>Swipe sideways to see more projects.</b>`,
   },
   send_mail_title: {
     pt_br: `Contato`,

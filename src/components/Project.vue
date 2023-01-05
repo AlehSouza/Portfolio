@@ -55,7 +55,7 @@ a {
   text-decoration: none;
 }
 .project {
-  width: 300px;
+  width: 100%;
   border-radius: 5px;
   margin: 20px;
   border: 1px solid #c4c4c4;
@@ -66,8 +66,8 @@ a {
   overflow: hidden;
 }
 .project-image {
-  width: 300px;
-  height: 180px;
+  width: 100%;
+  height: 300px;
   background-size: cover;
   background-position: center;
   flex-direction: column;

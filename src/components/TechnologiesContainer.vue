@@ -74,6 +74,16 @@ export default {
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
         },
+        {
+          name: "MongoDB",
+          stars: 3,
+          image: "https://miro.medium.com/max/512/1*doAg1_fMQKWFoub-6gwUiQ.png",
+        },
+        {
+          name: "Git",
+          stars: 4,
+          image: "https://miro.medium.com/max/383/1*co_1qORNdM0PI1nvCp7Iig.png",
+        },
       ],
     };
   },
