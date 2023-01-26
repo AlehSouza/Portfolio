@@ -89,7 +89,7 @@ export default {
           alt: "Linkedin",
         },
         {
-          link: "https://drive.google.com/file/d/1ldxgJ3cPg0ulykUx79uN_vuB8T3VR-6r/view",
+          link: "https://drive.google.com/file/d/1sm8Zl5vzos-iRuN1Ll1QAI1Oav2VDZ4O/view",
           icon: "fas fa-file-code",
           alt: "Currículo",
         },
