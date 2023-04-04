@@ -54,17 +54,17 @@ export default {
         },
         {
           name: "Vue",
-          stars: 3,
+          stars: 4,
           image: "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
         },
         {
           name: "Vuetify",
-          stars: 3,
+          stars: 4,
           image: "https://avatars.githubusercontent.com/u/22138497?s=200&v=4",
         },
         {
           name: "React",
-          stars: 2,
+          stars: 3,
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
         },
