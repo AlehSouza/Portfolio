@@ -52,6 +52,16 @@ const translations = {
     },
     {
       title: {
+        pt_br: `Money Money Invest`,
+        eng: `Money Money Invest`,
+      },
+      text: {
+        pt_br: `Atuo como desenvolvedor Front-End, com as tecnologias, JavaScript, HTML, CSS, com o framework NextJs(React).`,
+        eng: `I work as a Front-End developer, with technologies, JavaScript, HTML, CSS, with the NextJs(React) framework.`,
+      },
+    },
+    {
+      title: {
         pt_br: `Novidades em breve`,
         eng: `News soon`,
       },

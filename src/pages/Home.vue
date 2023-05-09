@@ -84,7 +84,7 @@ export default {
           alt: "Codepen",
         },
         {
-          link: "https://www.linkedin.com/in/alesouza2503/",
+          link: "https://www.linkedin.com/in/alehsouza/",
           icon: "fab fa-linkedin",
           alt: "Linkedin",
         },

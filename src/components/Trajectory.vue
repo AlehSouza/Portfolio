@@ -62,7 +62,7 @@
           </div>
         </div>
 
-        <div class="step current" data-notes-count="2">
+        <div class="step completed">
           <div
             class="title"
             v-html="
@@ -84,7 +84,7 @@
           </div>
         </div>
 
-        <div class="step">
+        <div class="step current">
           <div
             class="title"
             v-html="
@@ -99,6 +99,27 @@
                 this.lang === 'pt_br'
                   ? this.texts.jobs_subtitle_trajectory[3].text.pt_br
                   : this.texts.jobs_subtitle_trajectory[3].text.eng
+              "
+            ></span>
+            <br />
+          </div>
+        </div>
+
+        <div class="step">
+          <div
+            class="title"
+            v-html="
+              this.lang === 'pt_br'
+                ? this.texts.jobs_subtitle_trajectory[4].title.pt_br
+                : this.texts.jobs_subtitle_trajectory[4].title.eng
+            "
+          ></div>
+          <div class="date">
+            <span
+              v-html="
+                this.lang === 'pt_br'
+                  ? this.texts.jobs_subtitle_trajectory[4].text.pt_br
+                  : this.texts.jobs_subtitle_trajectory[4].text.eng
               "
             ></span>
             <br />
