@@ -46,8 +46,8 @@ const translations = {
         eng: `Keycash`,
       },
       text: {
-        pt_br: `Atuo como desenvolvedor Front-End, com as tecnologias, JavaScript, HTML, CSS e Vue.`,
-        eng: `I work as a Front-End developer, with the technologies, JavaScript, HTML, CSS and Vue.`,
+        pt_br: `Atuei como desenvolvedor Front-End, com as tecnologias, JavaScript, HTML, CSS e Vue.`,
+        eng: `I worked as a Front-End developer, with the technologies, JavaScript, HTML, CSS and Vue.`,
       },
     },
     {
