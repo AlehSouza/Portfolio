@@ -48,20 +48,20 @@ export default {
           image: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
         },
         {
-          name: "Vercel",
-          stars: 3,
-          image: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
-        },
-        {
-          name: "Vue",
+          name: 'TypeScript',
           stars: 4,
-          image: "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
+          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"
         },
         {
           name: "React",
           stars: 4,
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        },
+        {
+          name: "Vue",
+          stars: 4,
+          image: "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
         },
         {
           name: "NodeJs",
@@ -78,6 +78,11 @@ export default {
           name: "Git",
           stars: 4,
           image: "https://miro.medium.com/max/383/1*co_1qORNdM0PI1nvCp7Iig.png",
+        },
+        {
+          name: "Vercel",
+          stars: 3,
+          image: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
         },
       ],
     };

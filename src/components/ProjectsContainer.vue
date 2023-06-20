@@ -73,17 +73,29 @@ export default {
           stack: "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
           github_link: "https://github.com/AlehSouza/Fisioadapt",
         },
+        // {
+        //   image: "https://imgur.com/O8Y0M7E.png",
+        //   link: "http://kimochism.com/",
+        //   name: "Kimochism",
+        //   color: "#000000",
+        //   desc_pt_br:
+        //     "E-commerce desenvolvido em react para a empresa Kimochism.",
+        //   desc_eng: "E-commerce developed in react for the company Kimochism.",
+        //   stack:
+        //     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        //   github_link: "https://github.com/AlehSouza/Kimo-web",
+        // },
         {
-          image: "https://imgur.com/O8Y0M7E.png",
-          link: "http://kimochism.com/",
-          name: "Kimochism",
-          color: "#000000",
+          image: "https://imgur.com/klPVDct.png",
+          link: "https://valorant-web.vercel.app/",
+          name: "Valorant Web (Developing)",
+          color: "#e34b33",
           desc_pt_br:
-            "E-commerce desenvolvido em react para a empresa Kimochism.",
-          desc_eng: "E-commerce developed in react for the company Kimochism.",
-          stack:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
-          github_link: "https://github.com/AlehSouza/Kimo-web",
+            "Site sobre jogo Valorant, um FPS tático, com muita diversão e competitividade. (desktop)",
+          desc_eng:
+            "Site about Valorant game, a tactical FPS, with lots of fun and competitiveness. (desktop)",
+          stack: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+          github_link: "https://github.com/AlehSouza/Valorant-Web",
         },
         {
           image: "https://imgur.com/mlPDb7C.png",
