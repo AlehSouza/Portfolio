@@ -88,7 +88,7 @@ export default {
         {
           image: "https://imgur.com/klPVDct.png",
           link: "https://valorant-web.vercel.app/",
-          name: "Valorant Web (Developing)",
+          name: "Valorant Web",
           color: "#e34b33",
           desc_pt_br:
             "Site sobre jogo Valorant, um FPS tático, com muita diversão e competitividade. (desktop)",
