@@ -71,7 +71,7 @@ export default {
           desc_eng:
             "Contact site for the company Fisioadapt where you can learn more about the services and speak with the professionals of the company.",
           stack: "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
-          github_link: "https://github.com/AlehSouza/Fisioadapt",
+          github_link: "",
         },
         // {
         //   image: "https://imgur.com/O8Y0M7E.png",
@@ -94,7 +94,8 @@ export default {
             "Site sobre jogo Valorant, um FPS tático, com muita diversão e competitividade. (desktop)",
           desc_eng:
             "Site about Valorant game, a tactical FPS, with lots of fun and competitiveness. (desktop)",
-          stack: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+          stack:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
           github_link: "https://github.com/AlehSouza/Valorant-Web",
         },
         {

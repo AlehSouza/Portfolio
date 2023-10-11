@@ -48,9 +48,10 @@ export default {
           image: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
         },
         {
-          name: 'TypeScript',
+          name: "TypeScript",
           stars: 4,
-          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png",
         },
         {
           name: "React",

@@ -6,14 +6,13 @@
       :alt="technologies.name"
       width="100px"
     />
-    <span
-      ><b>{{ technologies.name }}</b></span
-    >
+    <span>
+      <b>{{ technologies.name }}</b>
+    </span>
     <!-- Tooltip -->
-    <div class="technology-container-tooltip">
+    <!-- <div class="technology-container-tooltip">
       <div class="technology-pointer"></div>
       <div class="technology-context">
-        <p>{{ technologies.text }}</p>
         <div class="stars">
           <div v-for="index in 5" :key="index">
             <div
@@ -22,7 +21,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -42,7 +41,6 @@ export default {
   position: relative;
   display: flex;
   padding: 50px 15px;
-  cursor: pointer;
   .technology-image {
     width: 100px;
     height: 100px;

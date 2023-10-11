@@ -5,7 +5,6 @@
       <button @click="changeLang('eng')">ENG</button>
     </div>
     <Introduction :lang="lang" :texts="translations" :midias="midias" />
-    <LineBreak data-aos="fade-up" data-aos-delay="300" />
     <About
       :lang="lang"
       :texts="translations"

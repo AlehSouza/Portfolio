@@ -12,6 +12,6 @@ export default {
 
 <style lang="scss" scoped>
 embed {
-  background-color: red;
+  background-color: white;
 }
 </style>
