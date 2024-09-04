@@ -50,9 +50,7 @@ export default {
     display: flex;
   }
 }
-.technology-box:hover .technology-container-tooltip {
-  display: flex;
-}
+
 
 .technology-container-tooltip {
   z-index: 99999;
