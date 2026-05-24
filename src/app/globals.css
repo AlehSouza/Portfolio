@@ -1,72 +1,152 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededeb;
+  --muted: #6b6b6b;
+  --muted-2: #8a8a86;
+  --line: #1c1c1c;
+  --line-strong: #2a2a2a;
+  --surface: #111111;
+  --accent: #ededeb;
+  --beige: #d8cdb5;
+  --beige-ink: #2a2620;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-beige: var(--beige);
+  --color-beige-ink: var(--beige-ink);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-/* Esconder scrollbar mas manter funcionalidade */
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, monospace;
+}
+
+/* Selection */
+::selection {
+  background: #ededeb;
+  color: #0a0a0a;
+}
+
+/* Hide scrollbar but keep functionality */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari and Opera */
+  display: none;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-  font-family: 'Poppins', sans-serif;
+/* Thin divider */
+.divider {
+  border-color: var(--line);
 }
 
-/* Estilos customizados para o Swiper */
-.project-swiper {
-  padding: 12px;
+/* Hairline grid background (subtle) */
+.grid-hairlines {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 8.3333% 100%;
 }
 
-.project-swiper .swiper-pagination {
-  position: relative !important;
-  margin-top: 40px !important;
+/* Marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 40s linear infinite;
 }
 
-.project-swiper .swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.4) !important;
-  width: 12px !important;
-  height: 12px !important;
-  margin: 0 8px !important;
-  transition: all 0.3s ease;
+/* Reveal underline for links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
 }
 
-.project-swiper .swiper-pagination-bullet-active {
-  background: white !important;
-  transform: scale(1.2);
+/* Project card image hover (color only, subtle zoom) */
+.project-card {
+  border-color: var(--line);
+}
+.project-card:hover .project-img {
+  transform: scale(1.02);
+}
+.project-img {
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Line clamp utility */
+/* Work carousel — editorial pagination (thin bars) */
+.work-bullet {
+  width: 28px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  background: var(--line-strong);
+  cursor: pointer;
+  transition: background 0.4s ease, height 0.4s ease;
+}
+
+.work-bullet:hover {
+  background: var(--muted-2);
+}
+
+.work-bullet-active {
+  background: var(--foreground);
+  height: 2px;
+}
+
+/* Line clamp utility (kept for compat) */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;

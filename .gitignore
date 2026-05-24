@@ -2,6 +2,10 @@
 node_modules
 /dist
 
+# Next.js / TypeScript build artifacts
+.next/
+tsconfig.tsbuildinfo
+
 
 # local env files
 .env.local
